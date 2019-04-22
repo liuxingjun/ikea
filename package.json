@@ -1,0 +1,30 @@
+{
+  "name": "ikea-filter",
+  "version": "1.0.0",
+  "description": "ikea filter",
+  "main": "index.js",
+  "dependencies": {
+    "collect.js": "^4.6.5",
+    "crawler": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "set NODE_ENV=dev && node index.js",
+    "build": "node index.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuxingjun/ikea.git"
+  },
+  "keywords": [
+    "ikea",
+    "filter"
+  ],
+  "author": "liuxingjun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuxingjun/ikea/issues"
+  },
+  "homepage": "https://github.com/liuxingjun/ikea#readme"
+}
