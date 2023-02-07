@@ -1,0 +1,11 @@
+{
+    "name": "Node.js",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {}
+    },
+    "forwardPorts": [],
+    "postCreateCommand": "yarn install",
+    "customizations": {},
+    "remoteUser": "root"
+}
