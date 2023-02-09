@@ -2,10 +2,17 @@
     "name": "Node.js",
     "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
     "features": {
-        "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {}
+        "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {},
+        "ghcr.io/devcontainers-contrib/features/deno:1": {}
     },
     "forwardPorts": [],
     "postCreateCommand": "yarn install",
-    "customizations": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "githubocto.flat"
+            ]
+        }
+    },
     "remoteUser": "root"
 }
