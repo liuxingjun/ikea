@@ -16,6 +16,8 @@ function flat(categories, parent_id, depth) {
             flat(category.subCategories, category.id, depth + 1)
         }
         delete category.subCategories
+        delete category.index
+        delete category.plp
         csvCategorylist.push(category)
     }
 }
