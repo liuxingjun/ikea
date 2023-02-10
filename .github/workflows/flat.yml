@@ -18,7 +18,7 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2
       - name: Fetch data
-        if: github.event.schedule == '0 0 15 * *'
+        if: ${{ github.event_name!='schedule' || github.event.schedule == '0 0 15 * *' }}
         uses: githubocto/flat@v3
         with:
           http_url: https://srv-web.app.ikea.cn/content/v2/catalogs?lang=zh
