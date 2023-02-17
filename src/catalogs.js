@@ -12,12 +12,10 @@ function flat(categories, parent_id, depth) {
         // console.log(category.name)
         category.parent_id = parent_id
         category.depth = depth
-        if (category.subCategories.length > 0) {
-            flat(category.subCategories, category.id, depth + 1)
+        if (category.children.length > 0) {
+            flat(category.children, category.id, depth + 1)
         }
-        delete category.subCategories
-        delete category.index
-        delete category.plp
+        delete category.children
         csvCategorylist.push(category)
     }
 }
