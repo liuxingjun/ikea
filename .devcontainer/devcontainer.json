@@ -5,6 +5,9 @@
         "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {},
         "ghcr.io/devcontainers-contrib/features/deno:1": {}
     },
+    "remoteEnv": {
+        "TZ": "Asia/Shanghai"
+    },
     "forwardPorts": [],
     "postCreateCommand": "yarn install",
     "customizations": {
