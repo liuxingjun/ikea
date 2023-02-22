@@ -3,6 +3,7 @@
     "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
     "features": {
         "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+            "plugins": "zsh-autosuggestions",
             "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions"
         },
         "ghcr.io/devcontainers-contrib/features/deno:1": {}
