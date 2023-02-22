@@ -10,15 +10,17 @@ var csvCategorylist = []
 function flat(categories, parent_id, depth) {
     for (const category of categories) {
         // console.log(category.name)
-        category.parent_id = parent_id
-        category.depth = depth
+        var newCategory = {}
+        newCategory.id = category.id
+        newCategory.name = category.name
+        newCategory.parent_id = parent_id
+        newCategory.depth = depth
+        newCategory.url = category.url
+        newCategory.globalImageUrl = category.globalImageUrl
         if (category.subCategories.length > 0) {
             flat(category.subCategories, category.id, depth + 1)
         }
-        delete category.subCategories
-        delete category.index
-        delete category.plp
-        csvCategorylist.push(category)
+        csvCategorylist.push(newCategory)
     }
 }
 flat(data, 0, 1)
