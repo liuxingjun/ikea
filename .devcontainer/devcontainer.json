@@ -2,7 +2,9 @@
     "name": "Node.js",
     "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
     "features": {
-        "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {},
+        "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+            "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions"
+        },
         "ghcr.io/devcontainers-contrib/features/deno:1": {}
     },
     "remoteEnv": {
@@ -12,9 +14,7 @@
     "postCreateCommand": "yarn install",
     "customizations": {
         "vscode": {
-            "extensions": [
-                "githubocto.flat"
-            ]
+            "extensions": []
         }
     },
     "remoteUser": "root"
