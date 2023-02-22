@@ -21,6 +21,6 @@ jobs:
         if: ${{ github.event_name!='schedule' || github.event.schedule == '0 0 15 * *' }}
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.ikea.cn/api-host/bff/content/catalogs
+          http_url: https://srv-web.app.ikea.cn/content/v2/catalogs?lang=zh
           downloaded_filename: data/catalogs.json
           postprocess: ./src/catalogs.js
