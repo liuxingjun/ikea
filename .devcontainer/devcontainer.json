@@ -15,7 +15,9 @@
     "postCreateCommand": "yarn install",
     "customizations": {
         "vscode": {
-            "extensions": []
+            "extensions": [
+				"denoland.vscode-deno"
+			]
         }
     },
     "remoteUser": "root"
