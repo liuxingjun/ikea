@@ -12,9 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup deno
-        uses: denoland/setup-deno@main
-        with:
-          deno-version: v1.10.x
+        uses: denoland/setup-deno@v1
       - name: Check out repo
         uses: actions/checkout@v2
       - name: Fetch data
